@@ -1,0 +1,8 @@
+com\alertasinfantiles\analizador_alertas\config\KafkaConsumerConfig.class
+com\alertasinfantiles\analizador_alertas\kafka\AlertaInfantilListener.class
+com\alertasinfantiles\analizador_alertas\service\AlertaRepository.class
+com\alertasinfantiles\analizador_alertas\model\AlertaInfantilEntity.class
+com\alertasinfantiles\analizador_alertas\service\AlertaService.class
+com\alertasinfantiles\analizador_alertas\config\KafkaProducerConfig.class
+com\alertasinfantiles\analizador_alertas\model\AlertaInfantil.class
+com\alertasinfantiles\analizador_alertas\AnalizadorAlertasApplication.class
