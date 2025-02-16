@@ -1,4 +1,4 @@
-package com.analizadoralertas.analizador_alertas;
+package com.alertasinfantiles.analizador_alertas;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

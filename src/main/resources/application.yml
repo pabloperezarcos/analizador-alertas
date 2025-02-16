@@ -1,18 +1,29 @@
+server:
+  port: 8082
+
 spring:
   kafka:
     bootstrap-servers: kafka-1:9092,kafka-2:9093,kafka-3:9094
     consumer:
-      group-id: analizador-alertas-group
+      group-id: grupo-analizador
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
-      properties:
-        spring.json.trusted.packages: "*"
 
-kafka:
-  topic:
-    entrada: alertas_infantiles
-    salida: alertas_analizadas
+    properties:
+      spring.json.trusted.packages: "*"
+      spring.json.type.mapping: "com.alertasinfantiles.generador_alertas.model.AlertaInfantil:com.alertasinfantiles.analizador_alertas.model.AlertaInfantil"
 
-alertas:
-  umbralRecurrencia: 3
+  datasource:
+    url: jdbc:oracle:thin:@backduoccloud_high?TNS_ADMIN=/app/wallet
+    username: ADMIN
+    password: Secure1Password2Example
+    driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+    show-sql: true

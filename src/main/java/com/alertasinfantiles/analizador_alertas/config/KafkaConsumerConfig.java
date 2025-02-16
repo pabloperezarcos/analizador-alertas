@@ -1,4 +1,4 @@
-package com.analizadoralertas.analizador_alertas.config;
+package com.alertasinfantiles.analizador_alertas.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

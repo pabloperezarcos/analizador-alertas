@@ -1,4 +1,4 @@
-package com.analizadoralertas.analizador_alertas.model;
+package com.alertasinfantiles.analizador_alertas.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
