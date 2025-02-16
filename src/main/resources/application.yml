@@ -4,6 +4,7 @@ server:
 spring:
   kafka:
     bootstrap-servers: kafka-1:9092,kafka-2:9093,kafka-3:9094
+
     consumer:
       group-id: grupo-analizador
       auto-offset-reset: earliest
@@ -11,8 +12,8 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
 
     properties:
-      spring.json.trusted.packages: "*"
       spring.json.type.mapping: "com.alertasinfantiles.generador_alertas.model.AlertaInfantil:com.alertasinfantiles.analizador_alertas.model.AlertaInfantil"
+      spring.json.trusted.packages: "*"
 
   datasource:
     url: jdbc:oracle:thin:@backduoccloud_high?TNS_ADMIN=/app/wallet
